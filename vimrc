@@ -22,3 +22,6 @@ set nowrap
 set showmatch
 set scrolloff=4
 set updatetime=300
+
+" Use real tabs for Makefiles
+autocmd FileType make setlocal noexpandtab shiftwidth=8 softtabstop=0

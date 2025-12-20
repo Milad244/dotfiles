@@ -25,3 +25,6 @@ set updatetime=300
 
 " Use real tabs for Makefiles
 autocmd FileType make setlocal noexpandtab shiftwidth=8 softtabstop=0
+
+" Shortcuts
+command! ResetA 1,$d | 0r A_template.cpp

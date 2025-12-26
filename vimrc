@@ -27,4 +27,4 @@ set updatetime=300
 autocmd FileType make setlocal noexpandtab shiftwidth=8 softtabstop=0
 
 " Shortcuts
-command! ResetA 1,$d | 0r A_template.cpp
+command! -nargs=1 Reset %d | r cf.cpp | 1delete | w! <args>.cpp
